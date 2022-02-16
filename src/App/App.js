@@ -37,12 +37,11 @@ addReservation = (newReservation) => {
   this.setState({ reservations: [...this.state.reservations, newReservation]})
 }
 
-
   render() {
     return (
       <div className="App">
         <h1 className='app-title'>Turing Cafe Reservations</h1>
-        <Form />
+        <Form addReservation={this.addReservation} />
         <div className='resy-form'>
         </div>
         <div className='resy-container'>
