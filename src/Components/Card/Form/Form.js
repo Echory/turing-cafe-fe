@@ -24,7 +24,7 @@ class Form extends Component {
   }
 
   clearInputs = () => {
-    this.setState({name: '', date: '', time: '', number: ''})
+    this.setState({name: '', date: '', time: '', number: 0})
   }
 
   render() {
@@ -33,20 +33,31 @@ class Form extends Component {
         <input type="text"
         placeholder="Name"
         name="name"
+        value={this.state.name}
+        onChange={event => this.handleChange(event)}
         />
+
         <input type="text"
         placeholder="Date"
         name="date"
+        value={this.state.date}
+        onChange={event => this.handleChange(event)}
         />
+
         <input type="text"
         placeholder="Time"
         name="time"
+        value={this.state.time}
+        onChange={event => this.handleChange(event)}
         />
+
         <input type="text"
         placeholder="Number of guests"
         name="guests"
+        value={this.state.number}
+        onChange={event => this.handleChange(event)}
         />
-        <button>Submit</button>
+        <button>Make Reservation</button>
       </section>
     )
   }
