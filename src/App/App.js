@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import {getAllReservations} from '../apiCalls'
 import Card from '../Components/Card/Card'
+import Form from '../Components/Card/Form/Form'
 
 class App extends Component {
   constructor() {
@@ -36,7 +37,7 @@ showReservations = () => {
   render() {
     return (
       <div className="App">
-        <Card />
+        <Form />
         <h1 className='app-title'>Turing Cafe Reservations</h1>
         <div className='resy-form'>
 
