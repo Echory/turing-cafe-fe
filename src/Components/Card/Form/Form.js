@@ -11,6 +11,16 @@ class Form extends Component {
     }
   }
 
+  handleChange = (event) => {
+    this.setState({ [event.target.name]: event.target.value })
+  }
+
+  submitReservation = (event) => {
+    event.preventDefault()
+    const newReservation = {...this.state}
+
+  }
+
   render() {
     return(
       <section>
@@ -30,6 +40,7 @@ class Form extends Component {
         placeholder="Number of guests"
         name="guests"
         />
+        <button>Submit</button>
       </section>
     )
   }
