@@ -1,0 +1,17 @@
+.form {
+  margin-bottom: 40px;
+}
+
+input {
+  margin: 8px;
+  padding: 3px;
+}
+
+button {
+  padding: 4px;
+  background-color: teal;
+  color: white;
+  border: 1px solid white;
+  width: 140px;
+  cursor: pointer;
+}

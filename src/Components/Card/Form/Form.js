@@ -1,4 +1,5 @@
 import React, {Component} from 'react'   
+import './Form.css'
 
 class Form extends Component {
   constructor() {
@@ -29,7 +30,7 @@ class Form extends Component {
 
   render() {
     return(
-      <section>
+      <section className="form">
         <input type="text"
         placeholder="Name"
         name="name"
