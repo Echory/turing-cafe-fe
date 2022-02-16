@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import {getAllReservations} from '../apiCalls'
 import Card from '../Components/Card/Card'
-import Form from '../Components/Card/Form/Form'
+import Form from '../Components/Form/Form'
 
 class App extends Component {
   constructor() {
