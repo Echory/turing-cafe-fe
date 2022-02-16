@@ -7,7 +7,6 @@ const Card = ({id, name, date, time, number}) => {
       <p>{date}</p>
       <p>{time}</p>
       <p>Table for {number}</p>
-      <p></p>
     </section>
   )
 }
