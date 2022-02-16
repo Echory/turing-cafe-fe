@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import {getAllReservations} from '../apiCalls'
-import Card from '../Components/Card'
+import Card from '../Components/Card/Card'
 
 class App extends Component {
   constructor() {
