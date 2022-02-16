@@ -53,8 +53,8 @@ class Form extends Component {
         />
 
         <input type="text"
-        placeholder="Number of guests"
-        name="guests"
+        placeholder="Number of Guests"
+        name="number"
         value={this.state.number}
         onChange={event => this.handleChange(event)}
         />
